@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+    <% for(var i = 0,len=list.length;i<len;i++){%>
+        <li>
+            姓名：<span><%=list[i]['name']%></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            年龄：<span><%=list[i]['age']%></span>
+        <li>
+    <%}%>
+    </ul>
+    aaaa
+    <p>Welcome to <%= title %></p>
+  </body>
+</html>
