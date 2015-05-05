@@ -32,4 +32,23 @@ function connectTest(){
     });
 }
 
-connectTest();
+//connectTest();
+
+var testUser = {
+    name: 'zhangshibiao',
+    age: '25',
+    email: 'shibiaoz@sina.cn'
+};
+function errCall(err,data,data2) {
+    if (err) {
+        console.log('===========error msg========== ');
+        console.log(err);
+    }else if(data){
+        console.log('=========== success=============');
+        console.log(data);
+    }
+}
+var User =  require('./model/user');
+//var userInstace = new User();
+//new User().get(errCall);
+User.getByName('zhangshibiao',errCall);

@@ -1,20 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <ul>
-    <% for(var i = 0,len=list.length;i<len;i++){%>
-        <li>
-            姓名：<span><%=list[i]['name']%></span>&nbsp;&nbsp;&nbsp;&nbsp;
-            年龄：<span><%=list[i]['age']%></span>
-        <li>
-    <%}%>
-    </ul>
-    aaaa
-    <p>Welcome to <%= title %></p>
-  </body>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title><%= title %></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="/stylesheets/normalize.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <nav>
+            <a class="reg" href="/reg">注册</a>
+            <a class="reg" href="/">首页</a>
+        </nav>
+    </body>
 </html>

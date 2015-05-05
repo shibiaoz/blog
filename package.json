@@ -15,6 +15,9 @@
     "serve-favicon": "~2.2.0",
     "mongodb":"*",
     "express-session":"*",
-    "connect-mongo":"*"
+    "connect-flash":"*",
+    "connect-mongo":"*",
+    "crypto":"*"
+
   }
 }
